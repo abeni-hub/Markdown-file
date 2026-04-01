@@ -26,3 +26,8 @@
 - Laravel
 - Git & GitHub
 - MySQL
+
+
+
+using the following resource
+[MarkDown] (https://quickref.me/markdown)
