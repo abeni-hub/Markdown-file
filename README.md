@@ -4,8 +4,6 @@
 🚀 Passionate about building impactful solutions  
 📍 Based in Ethiopia  
 
----
-
 ## 🧠 About Me
 
 - 🌱 I’m currently learning: React, Laravel, System Design  
