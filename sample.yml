@@ -1,0 +1,44 @@
+professional_profile:
+  name: Abeni
+  title: Aspiring Full Stack Developer
+  location: Ethiopia
+
+  summary: >
+    Passionate and dedicated software developer with a strong interest in
+    building scalable web applications and solving real-world problems.
+    Currently focused on improving skills in modern web technologies
+    including frontend and backend development with AI related.
+
+  skills:
+    languages:
+      - JavaScript
+      - PHP
+      - Python
+    frameworks:
+      - React
+      - Laravel
+    tools:
+      - Git
+      - GitHub
+      - VS Code
+      - MySQL
+
+  experience_level: Intermediate
+
+  current_focus:
+    - Mastering React and modern frontend development
+    - Improving backend development with Laravel
+    - Learning system design and best practices
+
+  goals:
+    short_term:
+      - Build real-world projects
+      - Contribute to open source
+    long_term:
+      - Become a professional full stack developer
+      - Work on large-scale systems
+
+  contact:
+    email: abinesilew@gmail.com
+    github: https://github.com/abeni-hub
+    linkedin: https://www.linkedin.com/in/abenezer-sileshi-50b9aa329/
