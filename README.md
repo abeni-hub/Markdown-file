@@ -29,3 +29,10 @@
 
 using the following resource
 [MarkDown] (https://quickref.me/markdown)
+
+
+
+```mermaid
+graph TD
+  A --> B
+```
