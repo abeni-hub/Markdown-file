@@ -10,8 +10,6 @@
 - 🎯 Goal: Become a Full Stack Developer  
 - ⚡ Fun fact: I love solving problems and learning new tech  
 
----
-
 ## 🛠 Tech Stack
 
 ### 💻 Languages
