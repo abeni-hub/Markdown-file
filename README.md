@@ -16,13 +16,14 @@
 - JavaScript
 - PHP
 - Python
-- Node JS(For JAV
+- Node JS(For JavaScript)
 
 ### ⚙️ Frameworks & Tools
 - React
 - Laravel
 - Git & GitHub
 - MySQL
+- Nest Js
 
 
 
