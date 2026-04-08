@@ -16,6 +16,7 @@
 - JavaScript
 - PHP
 - Python
+- Node JS(For JAV
 
 ### ⚙️ Frameworks & Tools
 - React
