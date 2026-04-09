@@ -1,0 +1,23 @@
+entity:
+  name: Ticket
+
+  fields:
+    subject:
+      type: string
+      nullable: false
+
+    description:
+      type: text
+      nullable: false
+
+    priority_level:
+      type: integer
+      nullable: false
+
+    is_resolved:
+      type: boolean
+      nullable: false
+
+  relationships:
+    - type: belongsTo
+      entity: User
