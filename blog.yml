@@ -1,0 +1,19 @@
+entity:
+  name: Author
+
+  fields:
+    name:
+      type: string
+      nullable: false
+
+    biography:
+      type: text
+      nullable: false
+
+    joined_date:
+      type: date
+      nullable: false
+
+  relationships:
+    - type: hasMany
+      entity: Post
