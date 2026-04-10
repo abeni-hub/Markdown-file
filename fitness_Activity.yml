@@ -1,0 +1,23 @@
+entity:
+  name: Workout
+
+  fields:
+    activity_name:
+      type: string
+      nullable: false
+
+    duration_minutes:
+      type: integer
+      nullable: false
+
+    calories_burned:
+      type: decimal
+      nullable: false
+
+    scheduled_at:
+      type: datetime
+      nullable: false
+
+  relationships:
+    - type: belongsToMany
+      entity: User
