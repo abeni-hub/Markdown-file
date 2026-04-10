@@ -1,0 +1,23 @@
+entity:
+  name: Plan
+
+  fields:
+    name:
+      type: string
+      nullable: false
+
+    monthly_rate:
+      type: decimal
+      nullable: false
+
+    trial_period_days:
+      type: integer
+      nullable: false
+
+    is_active:
+      type: boolean
+      nullable: false
+
+  relationships:
+    - type: hasMany
+      entity: Subscriber
