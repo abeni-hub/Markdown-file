@@ -1,0 +1,22 @@
+entity:
+  name: Booking
+
+  fields:
+    reference_code:
+      type: string
+      nullable: false
+
+    total_cost:
+      type: decimal
+      nullable: false
+
+    check_in_time:
+      type: datetime
+      nullable: false
+
+  relationships:
+    - type: belongsTo
+      entity: Customer
+
+    - type: belongsTo
+      entity: Venue
