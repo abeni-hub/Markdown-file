@@ -1,0 +1,23 @@
+entity:
+  name: Course
+
+  fields:
+    title:
+      type: string
+      nullable: false
+
+    credit_hours:
+      type: integer
+      nullable: false
+
+    base_fee:
+      type: decimal
+      nullable: false
+
+    last_updated:
+      type: datetime
+      nullable: false
+
+  relationships:
+    - type: belongsToMany
+      entity: Student
