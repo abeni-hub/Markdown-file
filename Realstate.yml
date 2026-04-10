@@ -19,5 +19,5 @@ entity:
       nullable: false
 
   relationships:
-    - type: belongsTo
+    - type: belongsToMany
       entity: Agent
