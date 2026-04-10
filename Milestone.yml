@@ -1,0 +1,19 @@
+entity:
+  name: Milestone
+
+  fields:
+    milestone_name:
+      type: string
+      nullable: false
+
+    target_completion:
+      type: date
+      nullable: false
+
+    is_critical:
+      type: boolean
+      nullable: false
+
+  relationships:
+    - type: belongsTo
+      entity: Project
