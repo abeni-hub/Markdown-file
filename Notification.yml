@@ -1,0 +1,19 @@
+entity:
+  name: Notification
+
+  fields:
+    header:
+      type: string
+      nullable: false
+
+    message_body:
+      type: text
+      nullable: false
+
+    is_read:
+      type: boolean
+      nullable: false
+
+  relationships:
+    - type: belongsTo
+      entity: User
