@@ -1,0 +1,23 @@
+entity:
+  name: Batch
+
+  fields:
+    lot_number:
+      type: string
+      nullable: false
+
+    quantity:
+      type: integer
+      nullable: false
+
+    expiry_date:
+      type: date
+      nullable: false
+
+    received_at:
+      type: datetime
+      nullable: false
+
+  relationships:
+    - type: belongsToOne
+      entity: Product
