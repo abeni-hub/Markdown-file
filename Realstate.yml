@@ -1,0 +1,23 @@
+entity:
+  name: Property
+
+  fields:
+    address:
+      type: string
+      nullable: false
+
+    marketing_copy:
+      type: text
+      nullable: false
+
+    asking_price:
+      type: decimal
+      nullable: false
+
+    is_available:
+      type: boolean
+      nullable: false
+
+  relationships:
+    - type: belongsTo
+      entity: Agent
