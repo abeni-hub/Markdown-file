@@ -1,0 +1,19 @@
+{
+  "name": "Student",
+  "fields": {
+    "name": {
+      "type": "string",
+      "nullable": false
+    },
+    "email": {
+      "type": "string",
+      "nullable": false
+    }
+  },
+  "relationships": [
+    {
+      "type": "belongsToMany",
+      "entity": "Course"
+    }
+  ]
+}
