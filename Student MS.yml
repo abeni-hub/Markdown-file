@@ -1,3 +1,5 @@
+1. Student
+
 entity:
   name: Student
 
@@ -44,3 +46,29 @@ entity:
 
     - type: belongsToMany
       entity: Student
+
+
+3.Instructor
+
+entity:
+  name: Instructor
+
+  fields:
+    name:
+      type: string
+      nullable: false
+
+    email:
+      type: string
+      nullable: false
+
+    hire_date:
+      type: date
+      nullable: false
+
+  relationships:
+    - type: hasMany
+      entity: Course
+
+
+      
