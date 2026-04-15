@@ -1,0 +1,46 @@
+entity:
+  name: Student
+
+  fields:
+    name:
+      type: string
+      nullable: false
+
+    email:
+      type: string
+      nullable: false
+
+    date_of_birth:
+      type: date
+      nullable: false
+
+  relationships:
+    - type: belongsToMany
+      entity: Course
+
+
+
+2. Course
+
+entity:
+  name: Course
+
+  fields:
+    title:
+      type: string
+      nullable: false
+
+    credit_hours:
+      type: integer
+      nullable: false
+
+    fee:
+      type: decimal
+      nullable: false
+
+  relationships:
+    - type: belongsTo
+      entity: Instructor
+
+    - type: belongsToMany
+      entity: Student
