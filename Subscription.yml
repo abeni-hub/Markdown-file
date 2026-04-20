@@ -5,10 +5,12 @@ entity:
     name:
       type: string
       nullable: false
+      
 
     monthly_rate:
       type: decimal
       nullable: false
+      
 
     trial_period_days:
       type: integer
