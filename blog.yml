@@ -1,6 +1,7 @@
 entity:
   name: Author
 
+
   fields:
     name:
       type: string
