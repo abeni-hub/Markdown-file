@@ -2,7 +2,6 @@ professional_profile:
   name: Abeni
   title: Aspiring Full Stack Developer
   location: Ethiopia
-
   summary: >
     Passionate and dedicated software developer with a strong interest in
     building scalable web applications and solving real-world problems.
@@ -24,6 +23,7 @@ professional_profile:
       - MySQL
 
   experience_level: Intermediate
+  
 
   current_focus:
     - Mastering React and modern frontend development
