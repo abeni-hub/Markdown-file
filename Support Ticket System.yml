@@ -1,0 +1,94 @@
+# PAGE SPECIFICATION 
+
+page:
+  name: TicketManagementPage
+  path: "/admin/tickets"
+
+  layout:
+    type: sidebar-left
+    sections:
+      - id: header
+        component: PageHeader
+        props:
+          title: "Support Tickets"
+
+      - id: main
+        component: TicketTable
+
+      - id: drawer
+        component: TicketForm
+
+
+
+# FORM SPECIFICATION 
+
+form:
+  id: TicketForm
+  submitAction: "/api/tickets/save"
+  layout: vertical
+
+  groups:
+    - title: "Ticket Information"
+      fields:
+        subject:
+          label: "Subject"
+          type: text
+          placeholder: "Enter ticket subject"
+          validation:
+            required: true
+            minLength: 3
+
+        description:
+          label: "Description"
+          type: text
+          placeholder: "Describe the issue"
+          validation:
+            required: true
+
+        priority_level:
+          label: "Priority"
+          type: select
+          options: ["Low", "Medium", "High"]
+          default: "Medium"
+
+        is_resolved:
+          label: "Resolved"
+          type: checkbox
+
+
+
+# TABLE SPECIFICATION
+
+table:
+  id: TicketTable
+  dataSource: "/api/tickets"
+
+  features:
+    pagination: true
+    sorting: true
+    selectable: true
+
+  columns:
+    - key: id
+      header: "ID"
+      width: "80px"
+
+    - key: subject
+      header: "Subject"
+      sortable: true
+
+    - key: priority_level
+      header: "Priority"
+
+    - key: is_resolved
+      header: "Status"
+      renderAs: "Badge"
+      props:
+        colorMap:
+          true: "green"
+          false: "red"
+
+    - key: actions
+      header: "Actions"
+      type: buttonGroup
+      items: ["Edit", "Delete"]
