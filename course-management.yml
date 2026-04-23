@@ -1,0 +1,82 @@
+# PAGE 
+
+page:
+  name: CourseManagementPage
+  path: "/admin/courses"
+
+  layout:
+    type: sidebar-left
+    sections:
+      - id: header
+        component: PageHeader
+        props:
+          title: "Courses"
+
+      - id: main
+        component: CourseTable
+
+      - id: drawer
+        component: CourseForm
+
+
+# FORM 
+
+form:
+  id: CourseForm
+  submitAction: "/api/courses/save"
+  layout: vertical
+
+  groups:
+    - title: "Course Details"
+      fields:
+        title:
+          label: "Course Title"
+          type: text
+          validation:
+            required: true
+
+        credit_hours:
+          label: "Credit Hours"
+          type: number
+          validation:
+            required: true
+
+        base_fee:
+          label: "Fee"
+          type: number
+          validation:
+            required: true
+
+        last_updated:
+          label: "Last Updated"
+          type: text
+
+
+# TABLE 
+
+table:
+  id: CourseTable
+  dataSource: "/api/courses"
+
+  features:
+    pagination: true
+    sorting: true
+
+  columns:
+    - key: id
+      header: "ID"
+
+    - key: title
+      header: "Title"
+      sortable: true
+
+    - key: credit_hours
+      header: "Credits"
+
+    - key: base_fee
+      header: "Fee"
+
+    - key: actions
+      header: "Actions"
+      type: buttonGroup
+      items: ["Edit", "Delete"]
