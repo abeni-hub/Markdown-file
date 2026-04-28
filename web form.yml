@@ -1,0 +1,72 @@
+form:
+  id: ProductAdvancedForm
+  submitAction: "/api/products/save"
+  type: create # create, edit, filter
+  layout: grid
+
+  grid:
+    columns: 2
+    gap: "16px"
+
+  groups:
+    - title: "Basic Information"
+      layout: grid
+      fields:
+        name:
+          label: "Product Name"
+          type: text
+          size: large
+          placeholder: "Enter product name"
+          validation:
+            required: true
+            minLength: 3
+
+        sku:
+          label: "SKU"
+          type: text
+          size: medium
+          validation:
+            required: true
+
+        category:
+          label: "Category"
+          type: select
+          options: ["Shirt", "Pant", "Jacket"]
+          size: medium
+
+        is_active:
+          label: "Active"
+          type: switch
+
+    - title: "Pricing"
+      fields:
+        cost_price:
+          label: "Cost Price"
+          type: number
+          size: small
+
+        selling_price:
+          label: "Selling Price"
+          type: number
+          size: small
+          validation:
+            required: true
+
+    - title: "Additional Info"
+      fields:
+        description:
+          label: "Description"
+          type: textarea
+          size: full-width
+
+        image:
+          label: "Upload Image"
+          type: file
+
+  actions:
+    - label: "Save"
+      type: submit
+      style: primary
+
+    - label: "Cancel"
+      type: reset
