@@ -1,0 +1,56 @@
+form:
+  id: ProductForm
+  type: create
+  submitAction: "/api/products/save"
+  layout: grid
+
+  grid:
+    columns: 2
+    gap: "16px"
+
+  groups:
+    - title: "Basic Info"
+      fields:
+        name:
+          label: "Product Name"
+          type: text
+          size: large
+          validation:
+            required: true
+
+        sku:
+          label: "SKU"
+          type: text
+          validation:
+            required: true
+
+        category:
+          label: "Category"
+          type: select
+          options: ["Shirt", "Pant", "Jacket"]
+
+        brand:
+          label: "Brand"
+          type: text
+
+    - title: "Pricing"
+      fields:
+        cost_price:
+          label: "Cost Price"
+          type: number
+
+        selling_price:
+          label: "Selling Price"
+          type: number
+          validation:
+            required: true
+
+    - title: "Inventory Settings"
+      fields:
+        min_stock_level:
+          label: "Minimum Stock"
+          type: number
+
+        is_active:
+          label: "Active"
+          type: switch
