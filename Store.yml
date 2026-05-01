@@ -1,0 +1,26 @@
+form:
+  id: StoreForm
+  type: create
+  submitAction: "/api/stores/save"
+  layout: vertical
+
+  groups:
+    - title: "Store Details"
+      fields:
+        name:
+          label: "Store Name"
+          type: text
+          validation:
+            required: true
+
+        location:
+          label: "Location"
+          type: text
+
+        manager:
+          label: "Manager"
+          type: text
+
+        is_active:
+          label: "Active"
+          type: switch
