@@ -1,0 +1,46 @@
+form:
+  id: StockMovementForm
+  type: create
+  submitAction: "/api/stock/move"
+  layout: grid
+
+  grid:
+    columns: 2
+
+  groups:
+    - title: "Movement Info"
+      fields:
+        product_id:
+          label: "Product"
+          type: select
+          dataSource: "/api/products"
+
+        store_id:
+          label: "Store"
+          type: select
+          dataSource: "/api/stores"
+
+        movement_type:
+          label: "Movement Type"
+          type: radio
+          options: ["IN", "OUT"]
+
+        quantity:
+          label: "Quantity"
+          type: number
+          validation:
+            required: true
+
+        movement_date:
+          label: "Date"
+          type: datetime
+
+    - title: "Additional Info"
+      fields:
+        reference:
+          label: "Reference"
+          type: text
+
+        notes:
+          label: "Notes"
+          type: textarea
