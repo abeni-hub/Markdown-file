@@ -1,0 +1,25 @@
+form:
+  id: SupplierForm
+  submitAction: "/api/suppliers/save"
+  layout: vertical
+
+  groups:
+    - title: "Supplier Info"
+      fields:
+        name:
+          label: "Supplier Name"
+          type: text
+          validation:
+            required: true
+
+        phone:
+          label: "Phone"
+          type: text
+
+        email:
+          label: "Email"
+          type: email
+
+        address:
+          label: "Address"
+          type: textarea
