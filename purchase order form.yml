@@ -1,0 +1,40 @@
+form:
+  id: PurchaseOrderForm
+  type: create
+  submitAction: "/api/purchase-orders/save"
+  layout: vertical
+
+  groups:
+    - title: "Order Info"
+      fields:
+        supplier_id:
+          label: "Supplier"
+          type: select
+          dataSource: "/api/suppliers"
+
+        order_date:
+          label: "Order Date"
+          type: date
+
+    - title: "Items"
+      type: repeatable
+      fields:
+        product_id:
+          label: "Product"
+          type: select
+          dataSource: "/api/products"
+
+        quantity:
+          label: "Quantity"
+          type: number
+
+        unit_price:
+          label: "Unit Price"
+          type: number
+
+    - title: "Summary"
+      fields:
+        total_amount:
+          label: "Total"
+          type: number
+          readonly: true
