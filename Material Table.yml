@@ -1,0 +1,61 @@
+table:
+  id: MaterialTable
+
+  dataSource: "/api/materials"
+
+  features:
+    pagination: true
+    sorting: true
+    selectable: true
+    export: true
+    search: true
+    filters: true
+
+  columns:
+    - key: id
+      header: "ID"
+      width: "70px"
+
+    - key: name
+      header: "Material Name"
+      sortable: true
+
+    - key: uom
+      header: "UOM"
+
+    - key: unit_price
+      header: "Unit Price"
+
+      format:
+        currency: ETB
+
+    - key: status
+      header: "Status"
+
+      renderAs: Badge
+
+      props:
+        colorMap:
+          active: green
+          inactive: red
+
+    - key: created_at
+      header: "Created"
+
+      format:
+        type: datetime
+
+    - key: actions
+      header: "Actions"
+
+      type: buttonGroup
+
+      items:
+        - label: "View"
+          action: view
+
+        - label: "Edit"
+          action: edit
+
+        - label: "Delete"
+          action: delete
