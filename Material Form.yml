@@ -1,0 +1,112 @@
+form:
+  id: MaterialCreateForm
+
+  type: create
+
+  mode: modal
+
+  submitAction: "/api/materials/store"
+
+  layout: grid
+
+  grid:
+    columns: 2
+    gap: "20px"
+
+  size:
+    width: "800px"
+
+  groups:
+    - title: "Basic Information"
+
+      fields:
+        name:
+          label: "Name"
+          type: text
+          size: large
+          placeholder: "Enter material name"
+
+          validation:
+            required: true
+            minLength: 2
+            maxLength: 100
+
+        description:
+          label: "Description"
+          type: textarea
+          size: full-width
+          placeholder: "Enter description"
+
+    - title: "Measurement & Pricing"
+
+      fields:
+        uom_id:
+          label: "UOM"
+          type: select
+
+          dataSource: "/api/uoms"
+
+          option:
+            label: "name"
+            value: "id"
+
+          placeholder: "Select Unit of Measure"
+
+          validation:
+            required: true
+
+        unit_price:
+          label: "Unit Price"
+          type: number
+
+          format:
+            decimalPlaces: 2
+
+          validation:
+            required: true
+            min: 0
+
+    - title: "Classification"
+
+      fields:
+        category_ids:
+          label: "Category"
+          type: multiSelect
+
+          dataSource: "/api/categories"
+
+          option:
+            label: "name"
+            value: "id"
+
+        supplier_ids:
+          label: "Supplier"
+          type: multiSelect
+
+          dataSource: "/api/suppliers"
+
+          option:
+            label: "name"
+            value: "id"
+
+        status:
+          label: "Status"
+          type: select
+
+          options:
+            - label: "Active"
+              value: active
+
+            - label: "Inactive"
+              value: inactive
+
+          default: active
+
+  actions:
+    - label: "Cancel"
+      type: reset
+      style: secondary
+
+    - label: "Create Material"
+      type: submit
+      style: success
