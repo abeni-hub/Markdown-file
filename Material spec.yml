@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=./frontend-schema.json
+
+page:
+  name: MaterialManagementPage
+  path: "/inventory/materials"
+
+  layout:
+    type: sidebar-left
+
+    sections:
+      - id: header
+        component: PageHeader
+        props:
+          title: "Materials"
+
+          actions:
+            - label: "Create Material"
+              action: openModal
+              target: MaterialCreateForm
+
+      - id: toolbar
+        component: TableToolbar
+        props:
+          export: true
+          search: true
+          filters: true
+
+      - id: main
+        component: MaterialTable
+
+      - id: modal
+        component: MaterialCreateForm
