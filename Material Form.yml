@@ -2,7 +2,6 @@ form:
   id: MaterialCreateForm
 
   type: create
-
   mode: modal
 
   submitAction: "/api/materials/store"
