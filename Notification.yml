@@ -15,5 +15,5 @@ entity:
       nullable: false
 
   relationships:
-    - type: belongsTo
+      type: belongsTo
       entity: User
