@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=./frontend-schema.json
+
+page:
+  name: CategoryManagementPage
+
+  path: "/inventory/categories"
+
+  layout:
+    type: sidebar-left
+
+    sections:
+      - id: header
+        component: PageHeader
+
+        props:
+          title: "Category Management"
+
+          actions:
+            - label: "Create Category"
+              action: openModal
+              target: CategoryCreateForm
+
+      - id: toolbar
+        component: TableToolbar
+
+        props:
+          search: true
+          export: true
+          filters: true
+
+      - id: main
+        component: CategoryTable
+
+      - id: modal
+        component: CategoryCreateForm
