@@ -1,0 +1,75 @@
+form:
+  id: CategoryCreateForm
+
+  type: create
+
+  mode: modal
+
+  submitAction: "/api/categories/store"
+
+  layout: vertical
+
+  size:
+    width: "700px"
+
+  groups:
+    - title: "Category Information"
+
+      fields:
+        name:
+          label: "Name"
+
+          type: text
+
+          size: large
+
+          placeholder: "Category Name"
+
+          validation:
+            required: true
+            minLength: 2
+            maxLength: 100
+
+        description:
+          label: "Description"
+
+          type: textarea
+
+          size: full-width
+
+          placeholder: "Category Description"
+
+          validation:
+            required: false
+            maxLength: 500
+
+        status:
+          label: "Status"
+
+          type: select
+
+          placeholder: "Select Status"
+
+          options:
+            - label: "Active"
+              value: active
+
+            - label: "Inactive"
+              value: inactive
+
+            - label: "Void"
+              value: void
+
+          default: active
+
+          validation:
+            required: true
+
+  actions:
+    - label: "Cancel"
+      type: reset
+      style: secondary
+
+    - label: "Create Category"
+      type: submit
+      style: primary
