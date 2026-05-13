@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=./frontend-schema.json
+
+page:
+  name: SupplierManagementPage
+
+  path: "/inventory/suppliers"
+
+  layout:
+    type: sidebar-left
+
+    sections:
+      - id: header
+        component: PageHeader
+
+        props:
+          title: "Supplier Management"
+
+          actions:
+            - label: "Create Supplier"
+              action: openModal
+              target: SupplierCreateForm
+
+      - id: toolbar
+        component: TableToolbar
+
+        props:
+          search: true
+          export: true
+          filters: true
+
+      - id: main
+        component: SupplierTable
+
+      - id: modal
+        component: SupplierCreateForm
