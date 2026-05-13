@@ -1,0 +1,108 @@
+form:
+  id: SupplierCreateForm
+
+  type: create
+
+  mode: modal
+
+  submitAction: "/api/suppliers/store"
+
+  layout: grid
+
+  grid:
+    columns: 2
+    gap: "20px"
+
+  size:
+    width: "850px"
+
+  groups:
+    - title: "Supplier Information"
+
+      fields:
+        name:
+          label: "Name"
+
+          type: text
+
+          size: large
+
+          placeholder: "Supplier Name"
+
+          validation:
+            required: true
+            minLength: 2
+            maxLength: 100
+
+        mobile:
+          label: "Mobile"
+
+          type: text
+
+          placeholder: "Mobile Number"
+
+          validation:
+            required: true
+            minLength: 10
+            maxLength: 15
+
+        email:
+          label: "Email"
+
+          type: email
+
+          size: full-width
+
+          placeholder: "Email Address"
+
+          validation:
+            required: false
+
+        address:
+          label: "Address"
+
+          type: textarea
+
+          size: full-width
+
+          placeholder: "Full Address"
+
+        description:
+          label: "Description"
+
+          type: textarea
+
+          size: full-width
+
+          placeholder: "Supplier Description"
+
+        status:
+          label: "Status"
+
+          type: select
+
+          placeholder: "Select Status"
+
+          options:
+            - label: "Active"
+              value: active
+
+            - label: "Inactive"
+              value: inactive
+
+            - label: "Blacklisted"
+              value: blacklisted
+
+          default: active
+
+          validation:
+            required: true
+
+  actions:
+    - label: "Cancel"
+      type: reset
+      style: secondary
+
+    - label: "Create Supplier"
+      type: submit
+      style: success
