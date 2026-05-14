@@ -1,0 +1,64 @@
+table:
+  id: SupplierTable
+
+  dataSource: "/api/suppliers"
+
+  features:
+    pagination: true
+    sorting: true
+    selectable: true
+    export: true
+    search: true
+    filters: true
+
+  columns:
+    - key: id
+      header: "ID"
+
+      width: "70px"
+
+    - key: name
+      header: "Supplier Name"
+
+      sortable: true
+
+    - key: mobile
+      header: "Mobile"
+
+    - key: email
+      header: "Email"
+
+    - key: status
+      header: "Status"
+
+      renderAs: Badge
+
+      props:
+        colorMap:
+          active: green
+          inactive: orange
+          blacklisted: red
+
+    - key: created_at
+      header: "Created At"
+
+      format:
+        type: datetime
+
+    - key: actions
+      header: "Actions"
+
+      type: buttonGroup
+
+      items:
+        - label: "View"
+          action: view
+          icon: eye
+
+        - label: "Edit"
+          action: edit
+          icon: edit
+
+        - label: "Delete"
+          action: delete
+          icon: trash
