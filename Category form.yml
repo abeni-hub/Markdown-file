@@ -1,9 +1,10 @@
 form:
   id: CategoryCreateForm
   type: create
+  
+  
   mode: modal
-
-  submitAction: "/api/categories/store"
+  ubmitAction: "/api/categories/store"
 
   layout: vertical
 
