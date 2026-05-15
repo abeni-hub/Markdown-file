@@ -12,7 +12,7 @@ page:
           title: "Materials"
 
           actions:
-            - label: "Create Material"
+            - label: "Create Material "
               action: openModal
               target: MaterialCreateForm
 
