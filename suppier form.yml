@@ -1,6 +1,5 @@
 form:
   id: SupplierCreateForm
-
   type: create
 
   mode: modal
