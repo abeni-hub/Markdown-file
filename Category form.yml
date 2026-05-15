@@ -1,6 +1,5 @@
 form:
   id: CategoryCreateForm
-
   type: create
 
   mode: modal
