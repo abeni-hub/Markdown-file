@@ -1,7 +1,6 @@
 form:
   id: CategoryCreateForm
   type: create
-
   mode: modal
 
   submitAction: "/api/categories/store"
