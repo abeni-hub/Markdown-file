@@ -1,6 +1,5 @@
 table:
   id: MaterialTable
-
   dataSource: "/api/materials"
 
   features:
