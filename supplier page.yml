@@ -7,8 +7,7 @@ page:
 
   layout:
     type: sidebar-left
-
-    sections:
+  sections:
       - id: header
         component: PageHeader
 
