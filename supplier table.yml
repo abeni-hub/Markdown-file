@@ -46,7 +46,6 @@ table:
 
     - key: actions
       header: "Actions"
-
       type: buttonGroup
 
       items:
