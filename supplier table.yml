@@ -1,6 +1,5 @@
 table:
   id: SupplierTable
-
   dataSource: "/api/suppliers"
 
   features:
