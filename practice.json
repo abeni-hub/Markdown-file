@@ -13,6 +13,7 @@
   },
   "relationships": [
     {
+      
       "type": "belongsToMany",
       "entity": "Course"
     }
