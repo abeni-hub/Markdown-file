@@ -2,6 +2,7 @@
   "name": "Student",
   "fields": {
     "name": {
+      
       "type": "string",
       "nullable": false
     },
