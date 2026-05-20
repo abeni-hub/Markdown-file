@@ -2,6 +2,7 @@ table:
   id: MaterialTable
   dataSource: "/api/materials"
 
+
   features:
     pagination: true
     sorting: true
