@@ -16,4 +16,6 @@ entity:
 
   relationships:
       type: belongsTo
+      
       entity: User
+      
