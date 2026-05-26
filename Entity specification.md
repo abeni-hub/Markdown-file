@@ -1,7 +1,7 @@
 
 2. Entity Specification
 
-In your ERP:
+In current ERP:
 
 Material Entity
 
