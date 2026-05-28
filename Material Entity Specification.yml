@@ -1,1 +1,59 @@
 
+entity:
+  name: Material
+
+  table: materials
+
+  fields:
+    id:
+      type: integer
+      primary: true
+      autoIncrement: true
+
+    name:
+      type: string
+      nullable: false
+      unique: true
+
+      validation:
+        required: true
+        minLength: 2
+        maxLength: 100
+
+    description:
+      type: text
+      nullable: true
+
+    uom_id:
+      type: integer
+      nullable: false
+
+    unit_price:
+      type: decimal
+      nullable: false
+
+      validation:
+        min: 0
+
+    status:
+      type: enum
+
+      options:
+        - active
+        - inactive
+        - void
+
+      default: active
+
+    created_at:
+      type: datetime
+
+    updated_at:
+      type: datetime
+
+  relationships:
+    - type: belongsTo
+      entity: UOM
+
+    - type: belongsToMany
+      entity: Supplier
