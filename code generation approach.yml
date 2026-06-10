@@ -7,3 +7,8 @@ entity:
 
     unit_price:
       type: decimal
+
+
+
+
+The above generation creates
