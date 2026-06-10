@@ -12,3 +12,12 @@ entity:
 
 
 The above generation creates
+
+
+
+Material.php
+MaterialController.php
+MaterialRequest.php
+MaterialMigration.php
+MaterialForm.tsx
+MaterialTable.tsx
