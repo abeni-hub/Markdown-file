@@ -1,1 +1,9 @@
+entity:
+  name: Material
 
+  fields:
+    name:
+      type: string
+
+    unit_price:
+      type: decimal
