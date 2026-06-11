@@ -21,3 +21,12 @@ MaterialRequest.php
 MaterialMigration.php
 MaterialForm.tsx
 MaterialTable.tsx
+
+
+graph LR
+
+YAML --> Parser
+Parser --> Generator
+Generator --> BackendCode
+Generator --> FrontendCode
+Generator --> Database
