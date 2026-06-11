@@ -61,3 +61,9 @@ Schema::create('suppliers', function (Blueprint $table) {
 });
 
 
+
+
+Frontend Schema
+
+
+
