@@ -30,3 +30,26 @@ Parser --> Generator
 Generator --> BackendCode
 Generator --> FrontendCode
 Generator --> Database
+
+
+
+ERP Example
+
+
+entity:
+  name: Supplier
+
+  fields:
+    name:
+      type: string
+
+    email:
+      type: string
+
+    status:
+      type: string
+
+
+
+
+
