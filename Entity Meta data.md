@@ -1,4 +1,3 @@
-
 What is Entity Metadata?
 
 Metadata means:
