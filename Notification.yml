@@ -1,6 +1,7 @@
 entity:
   name: Notification
 
+
   fields:
     header:
       type: string
