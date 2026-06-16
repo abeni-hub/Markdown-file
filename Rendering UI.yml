@@ -1,1 +1,4 @@
-endering Frontend Schema to UI is the process of transforming schema definitions such as YAML or JSON into actual user interface components. A renderer reads the schema and automatically generates forms, tables, pages, and other UI elements. This approach reduces manual coding, improves consistency, and enables rapid application development through configuration-driven design.
+endering Frontend Schema to UI is the process of transforming schema definitions such as YAML or JSON 
+into actual user interface components. A renderer reads the schema and automatically generates forms, tables, pages, and other UI elements.
+
+This approach reduces manual coding, improves consistency, and enables rapid application development through configuration-driven design.
