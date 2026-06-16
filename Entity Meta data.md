@@ -10,8 +10,6 @@ Additional information that describes an entity, its fields, behavior, UI repres
 
 
 
-
-
 **Example without Meta data**
 
 entity:
