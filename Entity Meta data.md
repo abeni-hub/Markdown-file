@@ -9,7 +9,6 @@ Entity Metadata is:
 Additional information that describes an entity, its fields, behavior, UI representation, permissions, and business rules.
 
 
-
 **Example without Meta data**
 
 entity:
