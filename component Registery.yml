@@ -1,0 +1,41 @@
+Component Registry
+This is a very important concept in schema-driven systems, low-code platforms, and Internal Developer Platforms (IDPs).
+Common Components in a Registry
+Form Components
+TextInput
+NumberInput
+EmailInput
+PasswordInput
+Textarea
+Checkbox
+Radio
+Switch
+Select
+MultiSelect
+DatePicker
+DateTimePicker
+FileUpload
+
+Table Components
+DataTable
+Badge
+StatusIndicator
+ActionButtons
+Pagination
+
+Layout Components
+Page
+Card
+Tabs
+Accordion
+Sidebar
+Header
+Footer
+Grid
+
+Feedback Components
+Alert
+Toast
+Loader
+Modal
+Dialog
