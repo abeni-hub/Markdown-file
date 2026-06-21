@@ -20,7 +20,6 @@ page:
 
 
 # FORM 
-
 form:
   id: CourseForm
   submitAction: "/api/courses/save"
