@@ -18,7 +18,7 @@ entity:
     name:
       type: string
 
-**Example with Meta data**
+**Example with Meta data **
 
 entity:
   name: Material
