@@ -18,8 +18,8 @@ page:
       - id: drawer
         component: CourseForm
 
-
 # FORM 
+
 form:
   id: CourseForm
   submitAction: "/api/courses/save"
