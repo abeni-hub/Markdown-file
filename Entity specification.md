@@ -1,6 +1,3 @@
-
-
-
 In current ERP:
 
 Material Entity
