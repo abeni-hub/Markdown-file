@@ -1,6 +1,6 @@
+
 entity:
   name: Batch
-
   fields:
     lot_number:
       type: string
