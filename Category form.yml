@@ -1,7 +1,6 @@
 form:
   id: CategoryCreateForm
-  type: create
-  
+  type: creat
   
   mode: modal
   ubmitAction: "/api/categories/store"
