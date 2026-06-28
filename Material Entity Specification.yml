@@ -7,7 +7,7 @@ entity:
     id:
       type: integer
       primary: true
-      autoIncrement: true
+      autoIncrement: false
 
     name:
       type: string
