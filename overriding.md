@@ -45,4 +45,27 @@ field:
 Generated:
 Single-line Text Input
 
+2. Layout Override
 
+Default:
+
+layout:
+  columns: 1
+
+Override:
+
+layout:
+  columns: 2
+
+3. Validation Override
+
+Default:
+
+validation:
+  required: true
+
+Business rule:
+
+validation:
+  required: true
+  minLength: 10
