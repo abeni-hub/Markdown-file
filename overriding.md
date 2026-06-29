@@ -32,3 +32,17 @@ Different layouts
 Extra fields
 Custom workflows
 Business-specific rules
+
+
+Types of Overrides
+
+1. UI Override
+Change how the generated UI looks.
+Default:
+field:
+ description:
+   type: text
+Generated:
+Single-line Text Input
+
+
