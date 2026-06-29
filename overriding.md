@@ -69,3 +69,15 @@ Business rule:
 validation:
   required: true
   minLength: 10
+
+
+4. Visibility Override
+
+Default:
+
+Always show Supplier field.
+
+Override:
+
+visibleIf:
+  isPurchased: true
