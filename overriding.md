@@ -18,3 +18,17 @@ You want:
 - Balcony
 You don't rebuild the entire house.
 
+Why Overriding is Needed
+
+Generated applications are usually:
+
+✅ Generic
+
+But businesses often need:
+
+Custom validations
+Custom buttons
+Different layouts
+Extra fields
+Custom workflows
+Business-specific rules
