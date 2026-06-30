@@ -18,5 +18,4 @@ The Runtime Engine:
 ✅ Executes validations
 ✅ Calls APIs
 ✅ Applies permissions
-✅ Manages workflows
 ✅ Updates the UI dynamically
