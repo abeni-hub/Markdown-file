@@ -8,7 +8,7 @@ form:
   layout: vertical
 
   size:
-    width: "70px"
+    width: "800px"
 
   groups:
     - title: "Category Information"
