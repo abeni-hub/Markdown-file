@@ -13,5 +13,6 @@ Report generation
 Dashboard analytics
 Payment integration
 AI recommendation
+and others
 
 These features usually require custom code.
