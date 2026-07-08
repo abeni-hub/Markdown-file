@@ -12,6 +12,6 @@ SMS notifications
 Report generation
 Dashboard analytics
 Payment integration
-AI recommendations
+AI recommendation
 
 These features usually require custom code.
