@@ -9,6 +9,5 @@ Price
 UOM
 Supplier
 Status
-and others
 
 This becomes an Entity Specification.
