@@ -14,7 +14,7 @@ form:
           dataSource: "/api/suppliers"
 
         order_date:
-          label: "Order Date"
+          label: "Order Datee"
           type: date
 
     - title: "Items"
