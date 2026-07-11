@@ -64,7 +64,7 @@ form:
             required: true
 
   actions:
-    - label: "Cancel"
+    - label: "Cancel "
       type: reset
       style: secondary
 
