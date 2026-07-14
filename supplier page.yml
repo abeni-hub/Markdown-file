@@ -1,6 +1,6 @@
 
 page:
-  name: SupplierManagementPage
+  name: SupplierManagementPages
 
   path: "/inventory/suppliers"
 
