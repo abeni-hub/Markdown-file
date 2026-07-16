@@ -10,4 +10,8 @@ UOM
 Supplier
 Status
 
+
 This becomes an Entity Specification.
+
+
+then explain the specified Entity
