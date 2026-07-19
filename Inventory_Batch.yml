@@ -18,6 +18,10 @@ entity:
       type: datetime
       nullable: false
 
+   released_at:
+      type: datetime
+      nullable: false
+
   relationships:
     - type: belongsToOne
       entity: Product
