@@ -27,9 +27,6 @@ entity:
     icon: "inventory"
     module: "Inventory"
 
-  fields:
-    name:
-      type: string
 
 
 
