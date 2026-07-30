@@ -8,7 +8,8 @@
 
 - 🌱 I’m currently learning: React, Laravel, System Design  
 - 🎯 Goal: Become a Full Stack Developer  
-- ⚡ Fun fact: I love solving problems and learning new tech  
+- ⚡ Fun fact: I love solving problems and learning new tech
+- - Not only that there is more 
 
 ## 🛠 Tech Stack
 
