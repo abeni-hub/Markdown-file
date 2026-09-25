@@ -4,7 +4,6 @@ form:
   submitAction: "/api/purchase-orders/save"
   layout: vertical
 
-
   groups:
     - title: "Order Info"
       fields:
