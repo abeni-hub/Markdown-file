@@ -7,6 +7,7 @@ However, real businesses often require unique features such as:
 Barcode generation
 QR code scanning
 Approval workflows
+
 Email notifications
 SMS notifications
 Report generation
