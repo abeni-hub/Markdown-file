@@ -5,7 +5,7 @@ form:
   mode: modal
   ubmitAction: "/api/categories/store"
 
-  layout: vertical
+  layout: verticals
 
   size:
     width: "80px"
